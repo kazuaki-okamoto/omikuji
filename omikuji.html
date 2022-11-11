@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>omikuji</title>
+    <style>
+        .suihei{
+            width: 100%;
+            text-align: center;
+        }
+        input{
+            color:white;
+            background-color: red;
+            width: 150px;
+            height: 150px;
+            border-radius: 50%; 
+        }
+    </style>
+</head>
+<body>
+    <div class = "suihei">
+        <input type="button" value = "おみくじ" onclick = "omikuji()">
+    </div>
+    <script>
+        function omikuji(){
+        random = Math.floor(Math.random()*6);
+        if(random == 0){
+            alert("大吉")
+        }else if(random <= 2) {
+            alert("中吉")
+        }else if(random <= 4){
+            alert("小吉")
+        }else{
+            alert("凶")
+        }凶
+        }
+    </script>
+</body>
+</html>
